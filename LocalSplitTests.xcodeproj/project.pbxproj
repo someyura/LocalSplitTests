@@ -12,7 +12,6 @@
 		D219EE48257A359F005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D219EE4E257A35A2005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D219EE54257A35A4005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D219EE94257A3664005F434B /* TestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D219EDE2257A3319005F434B /* TestInfo.plist */; };
 		D219EED1257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
 		D219EED2257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
 		D219EED3257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
@@ -25,6 +24,8 @@
 		D219EEDA257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
 		D219EEDB257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
 		D219EEDC257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
+		D219EF21257A45CA005F434B /* SplitTest-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EF1F257A45CA005F434B /* SplitTest-Tests.swift */; };
+		D219EF22257A45CA005F434B /* ABTest-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EF20257A45CA005F434B /* ABTest-Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SplitTest+Extenstion.swift"; sourceTree = "<group>"; };
 		D219EECF257A42FE005F434B /* SplitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTest.swift; sourceTree = "<group>"; };
 		D219EED0257A42FE005F434B /* ABTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTest.swift; sourceTree = "<group>"; };
+		D219EF1F257A45CA005F434B /* SplitTest-Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SplitTest-Tests.swift"; sourceTree = "<group>"; };
+		D219EF20257A45CA005F434B /* ABTest-Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ABTest-Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		D219EDF1257A33C7005F434B /* LocalSplitTests-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D219EF20257A45CA005F434B /* ABTest-Tests.swift */,
+				D219EF1F257A45CA005F434B /* SplitTest-Tests.swift */,
 			);
 			path = "LocalSplitTests-Tests";
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 					};
 					D219EDDA257A3319005F434B = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					D219EDF9257A3440005F434B = {
 						CreatedOnToolsVersion = 12.2;
@@ -340,7 +346,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D219EE94257A3664005F434B /* TestInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +387,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D219EF22257A45CA005F434B /* ABTest-Tests.swift in Sources */,
+				D219EF21257A45CA005F434B /* SplitTest-Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -966,6 +976,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
