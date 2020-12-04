@@ -15,18 +15,22 @@ jobs:
 
   macOS:
     name: Build for macOS
+    runs-on: macOS-latest
     steps:
       - name: Build
         run: xcrun xcodebuild build -destination "platform=macOS" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-macOS"
 
   watchOS:
     name: Build for watchOS
+    runs-on: macOS-latest
     steps:
       - name: Build
         run: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
 
   tvOS:
     name: Build for tvOS
+    runs-on: macOS-latest
     steps:
       - name: Build
         run: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
+
