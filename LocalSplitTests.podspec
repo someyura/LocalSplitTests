@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LocalSplitTests"
-  s.version          = "0.1"
+  s.version          = "1.0"
   s.summary          = "Framework for implementing simple Split and A/B tests without a server."
   s.description      = "LocalSplitTests is a lightweight framework that allows you to implementing simple A/B tests without a server."
   s.homepage         = "https://github.com/someyura/LocalSplitTests"
