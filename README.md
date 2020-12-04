@@ -18,7 +18,7 @@ This library is a take on cutting off everything non-essential. This micro-frame
 - [X] Elegible users filtering.
 - [X] Customizable exposure.
 - [X] AppGroups support.
-- [X] Test group is can me picked on a launch-time.
+- [X] Test group is can be picked on a launch-time.
 
 ## Usage
 
@@ -29,7 +29,7 @@ Let's say we have to version of welcome screen and you want to test, which one w
 
 To start, let's create an A/B test with a single line of code:
 
-```
+```swift
 let test = ABTest(name: ”welcome_test”)
 ```
 
@@ -37,7 +37,7 @@ let test = ABTest(name: ”welcome_test”)
 
 Now, on we need to check what screen should we show for our user. In order to do so, we just need to check the value of `userGroup`. Since we are using **A/B** test, the value of user group can be only `1` or `2`
 
-```
+```swift
 if test.userGroup == 1 {
 	self.present(FirstWelcomeViewController()
 } else {
@@ -50,7 +50,7 @@ if test.userGroup == 1 {
 By default, the value of the picked group is stored at `UserDefaults.standart`. 
 If you need to store it in your app group's UserDefauls, you can pass it into the test:
 
-```
+```swift
 let myDefaults = UserDefaults(suiteName: “MyAppGroup”)
 let test = ABTest(name:”welcome_test”, storage: myDefaults)
 ```
@@ -64,21 +64,21 @@ For example, our welcome screens are only in English and we don't want to show a
 
 In this case all we nee to do is to pass a `Bool` value that will indicate whether or not user is eligible for this test:
 
-```
+```swift
 let isEnglishSpeaker = Locale.current.languageCode.hasPrefix("en")
 let test = ABTest(name:”welcome_test”, isEligible: isEnglishSpeaker)
 ```
 
 You can also specify for many of eligible users will be exposed to the test:
 
-```
+```swift
 // only 50% of the eligible users will be involved in testing
 let test = ABTest(name:”welcome_test”, exposure: 0.5)
 ```
 
 And of course you can do both:
 
-```
+```swift
 // only 50% of the english speaking users will be involved in testing
 let test = ABTest(name:”welcome_test”, isEligible: isEnglishSpeaker, exposure: 0.5)
 ```
@@ -87,7 +87,7 @@ let test = ABTest(name:”welcome_test”, isEligible: isEnglishSpeaker, exposur
 
 Now we can check the value:
 
-```
+```swift
 switch test.userGroup {
 case 1:
 	self.present(FirstWelcomeViewController()
@@ -103,7 +103,7 @@ default:
 
 Sometime you might have more than 2 groups and in this case you need to use a `SplitTest`:
 
-```
+```swift
 // In this case, userGroup will be 1, 2 or 3
 let test = SplitTest(name: ”starting_points”, groupsCount: 3)
 
@@ -129,7 +129,7 @@ There are two kind of events:
 
 To log the first one, just add the folowing lines: 
 
-```
+```swift
 SplitTest.onTestStarted = { test in
 	Analytics.log(event: test.name, parameters: [“group”: test.userGroup])
 }
@@ -137,7 +137,7 @@ SplitTest.onTestStarted = { test in
 
 To log the second one, add this:
 
-```
+```swift
 SplitTest.onTestSkipped = { test in
 	Analytics.log(event: test.name)
 }
