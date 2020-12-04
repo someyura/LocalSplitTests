@@ -1,10 +1,10 @@
 language: swift
-osx_image: xcode11.2
+osx_image: xcode12.0
 jobs:
     include:
         - stage: "Xcode"
           name: "Run tests on iOS"
-          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=13.7,name=iPhone 11" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=14.0,name=iPhone 12" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
           after_success: 'bash <(curl -s https://codecov.io/bash)'
         -
           name: "Build for macOS"
