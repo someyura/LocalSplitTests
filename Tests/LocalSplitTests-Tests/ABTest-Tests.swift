@@ -115,7 +115,7 @@ class ABTest_Tests: XCTestCase {
         var started = 0
 
         SplitTest.onTestSkipped = { _ in skipped += 1 }
-        SplitTest.onNewTestStarted = { _ in started += 1 }
+        SplitTest.onTestStarted = { _ in started += 1 }
 
         for _ in 1...testsCount {
             self.cleanStorage()
@@ -134,7 +134,7 @@ class ABTest_Tests: XCTestCase {
         var started = 0
 
         SplitTest.onTestSkipped = { _ in skipped += 1 }
-        SplitTest.onNewTestStarted = { _ in started += 1 }
+        SplitTest.onTestStarted = { _ in started += 1 }
 
         for _ in 1...testsCount {
             self.cleanStorage()
@@ -153,7 +153,7 @@ class ABTest_Tests: XCTestCase {
         var started = 0
 
         SplitTest.onTestSkipped = { _ in skipped += 1 }
-        SplitTest.onNewTestStarted = { _ in started += 1 }
+        SplitTest.onTestStarted = { _ in started += 1 }
 
         for _ in 1...testsCount {
             self.cleanStorage()

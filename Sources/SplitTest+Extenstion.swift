@@ -38,7 +38,7 @@ extension SplitTest {
         storage.set(value, forKey: name)
         storage.synchronize()
         // ...calling an optional handler
-        SplitTest.onNewTestStarted?(self)
+        SplitTest.onTestStarted?(self)
         // ...return picked test group
         return value
     }
@@ -47,7 +47,7 @@ extension SplitTest {
 extension SplitTest {
     /// This closure will be called when new test will be picked for involved user
     /// You can use this clouse to send an event to your analytics service
-    public static var onNewTestStarted: ((SplitTest) -> Void)? = nil
+    public static var onTestStarted: ((SplitTest) -> Void)? = nil
 
     /// This closure will be called when current user will skip the test
     /// You can use this clouse to send an event to your analytics service 
