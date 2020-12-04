@@ -170,8 +170,31 @@ SplitTest.onTestSkipped = { test in
 
 ## Installation
 
-### SPM
-
 ### Carthage
+```
+github "someyura/LocalSplitTests"
+```
 
 ### CocoaPods
+
+```
+pod 'LocalSplitTests'
+```
+
+### Swift Package Manager
+
+```
+// swift-tools-version:5.0
+
+import PackageDescription
+
+let package = Package(
+  name: "MyApp",
+  dependencies: [
+    .package(url: "https://github.com/someyura/LocalSplitTests.git")
+  ],
+  targets: [
+    .target(name: "MyApp", dependencies: ["LocalSplitTests.git"])
+  ]
+)
+```
