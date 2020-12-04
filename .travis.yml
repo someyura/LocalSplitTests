@@ -1,0 +1,25 @@
+language: swift
+osx_image: xcode11.2
+jobs:
+    include:
+        - stage: "Xcode"
+          name: "Run tests on iOS"
+          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+          after_success: 'bash <(curl -s https://codecov.io/bash)'
+        -
+          name: "Build for macOS"
+          script: xcrun xcodebuild build -destination "platform=macOS" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-macOS"
+        -
+          name: "Build for watchOS"
+          script: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
+        -
+          name: "Build for tvOS"
+          script: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
+
+        - stage: "Swift Package Manager"
+          name: "Run Tests"
+          script: swift test -c release
+
+        - stage: "CocoaPods"
+          name: "Lint Podspec"
+          script: pod lib lint --allow-warnings
