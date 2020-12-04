@@ -1,0 +1,32 @@
+on: [push]
+name: build
+jobs:
+  iOS:
+    name: Run tests on iOS
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Show verion
+        run: swift --version
+      - name: Build
+        run: swift build -v
+      - name: Run tests
+        run: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=11.2,name=iPhone X" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+
+  macOS:
+    name: Build for macOS
+    steps:
+      - name: Build
+        run: xcrun xcodebuild build -destination "platform=macOS" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-macOS"
+
+  watchOS:
+    name: Build for watchOS
+    steps:
+      - name: Build
+        run: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
+
+  tvOS:
+    name: Build for tvOS
+    steps:
+      - name: Build
+        run: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
