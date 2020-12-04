@@ -10,6 +10,8 @@ jobs:
         run: swift build -v
       - name: Run tests
         run: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=14.2,name=iPhone 8" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+      - name: Test Coverage
+        run: bash <(curl -s https://codecov.io/bash)
 
   macOS:
     name: Build for macOS
@@ -25,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        run: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
+        run: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=7.1,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
 
   tvOS:
     name: Build for tvOS
@@ -33,5 +35,5 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        run: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
+        run: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=14.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
 
