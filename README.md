@@ -1,6 +1,7 @@
 # LocalSplitTests
 
-[![Build Status](https://travis-ci.com/someyura/LocalSplitTests.svg?branch=master)](https://travis-ci.com/someyura/LocalSplitTests) [![codecov](https://codecov.io/gh/someyura/LocalSplitTests/branch/master/graph/badge.svg?token=GPVT295OZX)](https://codecov.io/gh/someyura/LocalSplitTests) [![Twitter](https://img.shields.io/badge/twitter-%40yuryimashev-blue)](https://twitter.com/yuryimashev)
+[![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-green.svg)](http://cocoadocs.org/docsets/ReactiveKit/)
+[![Build Status](https://github.com/someyura/LocalSplitTests/workflows/build/badge.svg)](https://github.com/someyura/LocalSplitTests/workflows/build) [![codecov](https://codecov.io/gh/someyura/LocalSplitTests/branch/master/graph/badge.svg?token=GPVT295OZX)](https://codecov.io/gh/someyura/LocalSplitTests) [![Twitter](https://img.shields.io/badge/twitter-%40yuryimashev-blue)](https://twitter.com/yuryimashev)
 
 Making Split and A/B tests that doesn't rely on a server.
 
