@@ -5,18 +5,17 @@ jobs:
     name: Run tests on iOS
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Show verion
-        run: swift --version
+      - uses: actions/checkout@master
       - name: Build
         run: swift build -v
       - name: Run tests
-        run: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=11.2,name=iPhone X" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+        run: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=14.2,name=iPhone 8" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
 
   macOS:
     name: Build for macOS
     runs-on: macOS-latest
     steps:
+      - uses: actions/checkout@master
       - name: Build
         run: xcrun xcodebuild build -destination "platform=macOS" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-macOS"
 
@@ -24,6 +23,7 @@ jobs:
     name: Build for watchOS
     runs-on: macOS-latest
     steps:
+      - uses: actions/checkout@master
       - name: Build
         run: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-watchOS"
 
@@ -31,6 +31,7 @@ jobs:
     name: Build for tvOS
     runs-on: macOS-latest
     steps:
+      - uses: actions/checkout@master
       - name: Build
         run: xcrun xcodebuild build -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-tvOS"
 
