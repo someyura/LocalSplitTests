@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "LocalSplitTests"
   s.version          = "1.0"
-  s.summary          = "Framework for implementing simple Split and A/B tests without a server."
-  s.description      = "LocalSplitTests is a lightweight framework that allows you to implementing simple A/B tests without a server."
+  s.summary          = "Framework for implementing simple Split and A/B tests on user's device."
+  s.description      = "LocalSplitTests is a lightweight framework that allows you to implementing simple A/B tests on user's device."
   s.homepage         = "https://github.com/someyura/LocalSplitTests"
   s.license          = 'MIT'
   s.author           = { "Yury Imashev" => "yuryimashev@gmail.com" }
