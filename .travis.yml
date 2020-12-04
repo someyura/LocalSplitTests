@@ -4,7 +4,7 @@ jobs:
     include:
         - stage: "Xcode"
           name: "Run tests on iOS"
-          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=11.4,name=iPhone X" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
+          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "LocalSplitTests.xcodeproj" -scheme "LocalSplitTests-iOS"
           after_success: 'bash <(curl -s https://codecov.io/bash)'
         -
           name: "Build for macOS"
