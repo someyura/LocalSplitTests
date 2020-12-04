@@ -1,6 +1,6 @@
 //
-//  LocalSplitTest+Extenstion.swift
-//  LocalTestsKit
+//  SplitTest+Extenstion.swift
+//  LocalSplitTests
 //
 //  Created by Yury Imashev on 29.11.2020.
 //
