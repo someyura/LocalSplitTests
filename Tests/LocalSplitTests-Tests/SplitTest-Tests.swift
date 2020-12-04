@@ -94,16 +94,17 @@ class SplitTest_Tests: XCTestCase {
     func testDistribution() {
         let testsCount = 1000
         let groupsCount = 10
-        var groups = [Int].init(repeating: 0, count: groupsCount)
+        var groups = [Int].init(repeating: 0, count: groupsCount + 1)
 
         for _ in 1...testsCount {
             self.cleanStorage()
-            let abTest = SplitTest(name: testName, groupsCount: 4, exposure: 1, storage: userDefaults)
-            groups[abTest!.userGroup - 1] += 1
+            let abTest = SplitTest(name: testName, groupsCount: groupsCount, exposure: 0.5, storage: userDefaults)
+            groups[abTest!.userGroup] += 1
         }
-        let median = groups.sorted(by: <)[groups.count / 2]
         XCTAssert(groups.reduce(0, +) == testsCount)
-        XCTAssert(median - testsCount / 2 < testsCount / 20)
+        groups = Array(groups.dropFirst())
+        let median = groups.sorted(by: <)[groups.count / 2]
+        XCTAssert(abs(median - testsCount / 2 / groupsCount) < testsCount / 40)
     }
 
     func testNoInvolvedUsers1() {
