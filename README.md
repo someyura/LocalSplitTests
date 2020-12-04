@@ -2,14 +2,35 @@
 
 [![Build Status](https://travis-ci.com/someyura/LocalSplitTests.svg?branch=master)](https://travis-ci.com/someyura/LocalSplitTests) [![codecov](https://codecov.io/gh/someyura/LocalSplitTests/branch/master/graph/badge.svg?token=GPVT295OZX)](https://codecov.io/gh/someyura/LocalSplitTests) [![Twitter](https://img.shields.io/badge/twitter-%40yuryimashev-blue)](https://twitter.com/yuryimashev)
 
-Making Split and A/B tests without using a server.
+Making Split and A/B tests that doesn't rely on a server.
 
 ---
-Split testing is a very useful tool that allows you understand your users, thier behavior and make a better app. But unfortunately, most of solutions on the market makes you implement a bulky frameworks, register on their website, implement additional setup and sometime aren't free.
+Split testing is a powerful tool that allows you to understand your users, their behavior, and make a better app. 
 
-But sometimes you don't need a complicated setup and just want to make a simple split test to see what is working and what is not.
+Some services will allow you to implement very complex tests, but unfortunately, all of them rely on a server, that defines whether or not the user should be involved in the test and in which group he just be places. 
 
-This library is a take on cutting off everything non-essential. This micro-framework (less than 100 lines of code) will allow you make a
+This approach won't work when you need to define a test group when the app launches. For example, if you want to test different kinds of onboardings.
+
+Also, some of these solutions make you add bulky frameworks, register on their website, implement additional setup, and sometimes aren't free.
+
+Sometimes you don't need a complicated setup because you just want to make a simple test to see what works better. 
+
+This micro-framework (less than 50 lines of code) will allow you to run the Split Tests and A/B Tests locally on the user device. So you will need only an analytics service to see the results.
+
+## Summary
+
+* [Features](#features)
+* [Usage](#usage)
+  * [Initializing](#initializing)
+  * [Testing](#testing)
+  * [Storing](#storing)
+  * [Filtering users](#filtering-users)
+  * [Split tests](#split-tests)
+  * [Logging](#logging)
+* [Installation](#installation)
+  * [Carthage](#carthage)
+  * [CocoaPods](#cocoapods)
+  * [Swift Package Manager](#swift-package-manager)
 
 ## Features
 
@@ -22,10 +43,9 @@ This library is a take on cutting off everything non-essential. This micro-frame
 
 ## Usage
 
-
 ### Initializing 
 
-Let's say we have to version of welcome screen and you want to test, which one works better. 
+Let's say we have to version of the welcome screen and you want to test, which one works better. 
 
 To start, let's create an A/B test with a single line of code:
 
@@ -33,11 +53,14 @@ To start, let's create an A/B test with a single line of code:
 let test = ABTest(name: ”welcome_test”)
 ```
 
-* The `name` parameter is used for storing picked value so make sure you don't change it after test was started.
+The `name` parameter is used as a key for storing the user test group, so make sure you don't change it after the test was started.
 
-Now, on we need to check what screen should we show for our user. In order to do so, we just need to check the value of `userGroup`. Since we are using **A/B** test, the value of user group can be only `1` or `2`
+### Testing
+
+Now, we need to check what screen should we show for our user. Since we're using an A/B test, there are only two test groups. User's test group is picked automatically so all you left to do is just request it.
 
 ```swift
+// We are using A/B test, so the value of the userGroup can be only `1` or `2`
 if test.userGroup == 1 {
 	self.present(FirstWelcomeViewController()
 } else {
@@ -45,24 +68,26 @@ if test.userGroup == 1 {
 }
 ```
 
-* Note that user group is picked when you request it for the first time.
+Note that `userGroup` is picked when you request it for the first time. This is helpful because if the user won't trigger the test, you won't see him in your analytics.
 
-By default, the value of the picked group is stored at `UserDefaults.standart`. 
+### Storing
+
+By default, the value of the picked test group is stored at `UserDefaults.standard`. 
 If you need to store it in your app group's UserDefauls, you can pass it into the test:
 
 ```swift
-let myDefaults = UserDefaults(suiteName: “MyAppGroup”)
-let test = ABTest(name:”welcome_test”, storage: myDefaults)
+let appGroupDefaults = UserDefaults(suiteName: “MyAppGroup”)
+let test = ABTest(name:”welcome_test”, storage: appGroupDefaults)
 ```
 
 ### Filtering users
 
 Let's take back to our example with a welcome screen. 
 
-What if we don't have a translation yet since we want to find which one is working first?
-For example, our welcome screens are only in English and we don't want to show anythin to people with other languages.
+What if we don't have a translation yet since at first, we want to find which screen works best?
+For example, our welcome screens are only in English and we don't want to show anything to people in other languages.
 
-In this case all we nee to do is to pass a `Bool` value that will indicate whether or not user is eligible for this test:
+In this case, all we need to do is to pass a `Bool` value that will indicate whether or not the user is eligible for this test:
 
 ```swift
 let isEnglishSpeaker = Locale.current.languageCode.hasPrefix("en")
@@ -99,7 +124,7 @@ default:
 }
 ```
 
-### Split testing
+### Split tests
 
 Sometime you might have more than 2 groups and in this case you need to use a `SplitTest`:
 
