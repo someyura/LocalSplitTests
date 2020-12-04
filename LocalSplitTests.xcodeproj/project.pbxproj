@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D219EDDC257A3319005F434B /* LocalSplitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D219EDD2257A3319005F434B /* LocalSplitTests.framework */; };
+		D219EDE3257A3319005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D219EE48257A359F005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D219EE4E257A35A2005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D219EE54257A35A4005F434B /* LocalSplitTests.h in Headers */ = {isa = PBXBuildFile; fileRef = D219EDD5257A3319005F434B /* LocalSplitTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D219EE94257A3664005F434B /* TestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D219EDE2257A3319005F434B /* TestInfo.plist */; };
+		D219EED1257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
+		D219EED2257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
+		D219EED3257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
+		D219EED4257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */; };
+		D219EED5257A42FE005F434B /* SplitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECF257A42FE005F434B /* SplitTest.swift */; };
+		D219EED6257A42FE005F434B /* SplitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECF257A42FE005F434B /* SplitTest.swift */; };
+		D219EED7257A42FE005F434B /* SplitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECF257A42FE005F434B /* SplitTest.swift */; };
+		D219EED8257A42FE005F434B /* SplitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EECF257A42FE005F434B /* SplitTest.swift */; };
+		D219EED9257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
+		D219EEDA257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
+		D219EEDB257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
+		D219EEDC257A42FE005F434B /* ABTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219EED0257A42FE005F434B /* ABTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D219EDDD257A3319005F434B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D219EDC9257A3319005F434B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D219EDD1257A3319005F434B;
+			remoteInfo = LocalSplitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D219EDD2257A3319005F434B /* LocalSplitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalSplitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D219EDD5257A3319005F434B /* LocalSplitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalSplitTests.h; sourceTree = "<group>"; };
+		D219EDD6257A3319005F434B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D219EDDB257A3319005F434B /* LocalSplitTests-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LocalSplitTests-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D219EDE2257A3319005F434B /* TestInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestInfo.plist; sourceTree = "<group>"; };
+		D219EDFA257A3440005F434B /* LocalSplitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalSplitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D219EE0D257A3456005F434B /* LocalSplitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalSplitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D219EE22257A3485005F434B /* LocalSplitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalSplitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SplitTest+Extenstion.swift"; sourceTree = "<group>"; };
+		D219EECF257A42FE005F434B /* SplitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTest.swift; sourceTree = "<group>"; };
+		D219EED0257A42FE005F434B /* ABTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D219EDCF257A3319005F434B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDD8257A3319005F434B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EDDC257A3319005F434B /* LocalSplitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDF7257A3440005F434B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE0A257A3456005F434B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE1F257A3485005F434B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D219EDC8257A3319005F434B = {
+			isa = PBXGroup;
+			children = (
+				D219EDEE257A3334005F434B /* Sources */,
+				D219EDEF257A333A005F434B /* Supporting Files */,
+				D219EDF0257A335F005F434B /* Tests */,
+				D219EDD3257A3319005F434B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D219EDD3257A3319005F434B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D219EDD2257A3319005F434B /* LocalSplitTests.framework */,
+				D219EDDB257A3319005F434B /* LocalSplitTests-Tests.xctest */,
+				D219EDFA257A3440005F434B /* LocalSplitTests.framework */,
+				D219EE0D257A3456005F434B /* LocalSplitTests.framework */,
+				D219EE22257A3485005F434B /* LocalSplitTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D219EDEE257A3334005F434B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D219EED0257A42FE005F434B /* ABTest.swift */,
+				D219EECF257A42FE005F434B /* SplitTest.swift */,
+				D219EECE257A42FE005F434B /* SplitTest+Extenstion.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D219EDEF257A333A005F434B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D219EDD6257A3319005F434B /* Info.plist */,
+				D219EDE2257A3319005F434B /* TestInfo.plist */,
+				D219EDD5257A3319005F434B /* LocalSplitTests.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D219EDF0257A335F005F434B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D219EDF1257A33C7005F434B /* LocalSplitTests-Tests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D219EDF1257A33C7005F434B /* LocalSplitTests-Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "LocalSplitTests-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D219EDCD257A3319005F434B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EDE3257A3319005F434B /* LocalSplitTests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDF5257A3440005F434B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EE48257A359F005F434B /* LocalSplitTests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE08257A3456005F434B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EE4E257A35A2005F434B /* LocalSplitTests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE1D257A3485005F434B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EE54257A35A4005F434B /* LocalSplitTests.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D219EDD1257A3319005F434B /* LocalSplitTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D219EDE6257A3319005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-iOS" */;
+			buildPhases = (
+				D219EDCD257A3319005F434B /* Headers */,
+				D219EDCE257A3319005F434B /* Sources */,
+				D219EDCF257A3319005F434B /* Frameworks */,
+				D219EDD0257A3319005F434B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalSplitTests-iOS";
+			productName = LocalSplitTests;
+			productReference = D219EDD2257A3319005F434B /* LocalSplitTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D219EDDA257A3319005F434B /* LocalSplitTests-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D219EDE9257A3319005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-Tests" */;
+			buildPhases = (
+				D219EDD7257A3319005F434B /* Sources */,
+				D219EDD8257A3319005F434B /* Frameworks */,
+				D219EDD9257A3319005F434B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D219EDDE257A3319005F434B /* PBXTargetDependency */,
+			);
+			name = "LocalSplitTests-Tests";
+			productName = LocalSplitTestsTests;
+			productReference = D219EDDB257A3319005F434B /* LocalSplitTests-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D219EDF9257A3440005F434B /* LocalSplitTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D219EDFF257A3440005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-macOS" */;
+			buildPhases = (
+				D219EDF5257A3440005F434B /* Headers */,
+				D219EDF6257A3440005F434B /* Sources */,
+				D219EDF7257A3440005F434B /* Frameworks */,
+				D219EDF8257A3440005F434B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalSplitTests-macOS";
+			productName = LocalSplitTests;
+			productReference = D219EDFA257A3440005F434B /* LocalSplitTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D219EE0C257A3456005F434B /* LocalSplitTests-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D219EE12257A3456005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-watchOS" */;
+			buildPhases = (
+				D219EE08257A3456005F434B /* Headers */,
+				D219EE09257A3456005F434B /* Sources */,
+				D219EE0A257A3456005F434B /* Frameworks */,
+				D219EE0B257A3456005F434B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalSplitTests-watchOS";
+			productName = LocalSplitTests;
+			productReference = D219EE0D257A3456005F434B /* LocalSplitTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D219EE21257A3485005F434B /* LocalSplitTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D219EE27257A3485005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-tvOS" */;
+			buildPhases = (
+				D219EE1D257A3485005F434B /* Headers */,
+				D219EE1E257A3485005F434B /* Sources */,
+				D219EE1F257A3485005F434B /* Frameworks */,
+				D219EE20257A3485005F434B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LocalSplitTests-tvOS";
+			productName = LocalSplitTests;
+			productReference = D219EE22257A3485005F434B /* LocalSplitTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D219EDC9257A3319005F434B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					D219EDD1257A3319005F434B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					D219EDDA257A3319005F434B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D219EDF9257A3440005F434B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					D219EE0C257A3456005F434B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					D219EE21257A3485005F434B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = D219EDCC257A3319005F434B /* Build configuration list for PBXProject "LocalSplitTests" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D219EDC8257A3319005F434B;
+			productRefGroup = D219EDD3257A3319005F434B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D219EDD1257A3319005F434B /* LocalSplitTests-iOS */,
+				D219EDF9257A3440005F434B /* LocalSplitTests-macOS */,
+				D219EE0C257A3456005F434B /* LocalSplitTests-watchOS */,
+				D219EE21257A3485005F434B /* LocalSplitTests-tvOS */,
+				D219EDDA257A3319005F434B /* LocalSplitTests-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D219EDD0257A3319005F434B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDD9257A3319005F434B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EE94257A3664005F434B /* TestInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDF8257A3440005F434B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE0B257A3456005F434B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE20257A3485005F434B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D219EDCE257A3319005F434B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EED9257A42FE005F434B /* ABTest.swift in Sources */,
+				D219EED5257A42FE005F434B /* SplitTest.swift in Sources */,
+				D219EED1257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDD7257A3319005F434B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EDF6257A3440005F434B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EEDA257A42FE005F434B /* ABTest.swift in Sources */,
+				D219EED6257A42FE005F434B /* SplitTest.swift in Sources */,
+				D219EED2257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE09257A3456005F434B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EEDB257A42FE005F434B /* ABTest.swift in Sources */,
+				D219EED7257A42FE005F434B /* SplitTest.swift in Sources */,
+				D219EED3257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219EE1E257A3485005F434B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219EEDC257A42FE005F434B /* ABTest.swift in Sources */,
+				D219EED8257A42FE005F434B /* SplitTest.swift in Sources */,
+				D219EED4257A42FE005F434B /* SplitTest+Extenstion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D219EDDE257A3319005F434B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D219EDD1257A3319005F434B /* LocalSplitTests-iOS */;
+			targetProxy = D219EDDD257A3319005F434B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D219EDE4257A3319005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D219EDE5257A3319005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D219EDE7257A3319005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D219EDE8257A3319005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D219EDEA257A3319005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D219EDEB257A3319005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D219EE00257A3440005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D219EE01257A3440005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D219EE13257A3456005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D219EE14257A3456005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D219EE28257A3485005F434B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D219EE29257A3485005F434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		D219EF05257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		D219EF06257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		D219EF07257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Test;
+		};
+		D219EF08257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Test;
+		};
+		D219EF09257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTests;
+				PRODUCT_NAME = LocalSplitTests;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Test;
+		};
+		D219EF0A257A4413005F434B /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Supporting Files/TestInfo.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuryimashev.LocalSplitTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D219EDCC257A3319005F434B /* Build configuration list for PBXProject "LocalSplitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EDE4257A3319005F434B /* Debug */,
+				D219EDE5257A3319005F434B /* Release */,
+				D219EF05257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D219EDE6257A3319005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EDE7257A3319005F434B /* Debug */,
+				D219EDE8257A3319005F434B /* Release */,
+				D219EF06257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D219EDE9257A3319005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EDEA257A3319005F434B /* Debug */,
+				D219EDEB257A3319005F434B /* Release */,
+				D219EF0A257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D219EDFF257A3440005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EE00257A3440005F434B /* Debug */,
+				D219EE01257A3440005F434B /* Release */,
+				D219EF07257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D219EE12257A3456005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EE13257A3456005F434B /* Debug */,
+				D219EE14257A3456005F434B /* Release */,
+				D219EF08257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D219EE27257A3485005F434B /* Build configuration list for PBXNativeTarget "LocalSplitTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D219EE28257A3485005F434B /* Debug */,
+				D219EE29257A3485005F434B /* Release */,
+				D219EF09257A4413005F434B /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D219EDC9257A3319005F434B /* Project object */;
+}
